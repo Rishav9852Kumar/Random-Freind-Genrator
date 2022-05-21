@@ -1,24 +1,45 @@
-import logo from './logo.svg';
+import React,{useState,useEffect} from 'react';
+import {Container, Row, Col,Button } from "reactstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MyCard from "./MyCard";
 import './App.css';
 
+import Axios from "axios";
+
+
+
 function App() {
+  const [details,setDetails]=useState({});
+  const fetchDetails= async() =>{
+    const {data} =await Axios.get("https://randomuser.me/api/");
+    console.log("Data: ", data);
+
+    const details=data.results[0];
+    setDetails(details);
+  }
+  useEffect(() => {
+     fetchDetails(); 
+  },[]);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <h1>Random Friend Generator</h1>
+    
+    <Container fluid className="p-4  App">
+    
+    <Row>
+      <Col md={4} classNmae="offset-md-4 mt-4">
+        <MyCard details={details}/>
+      </Col>
+      <Col>
+      <Button outline color="warning" onClick={fetchDetails}>Next Profile</Button>
+      </Col>
+    </Row>
+ 
+    </Container>
+    
     </div>
+     
   );
 }
 
