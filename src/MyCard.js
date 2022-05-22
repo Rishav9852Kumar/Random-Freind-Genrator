@@ -5,7 +5,7 @@ import{FaEnvelope,FaMapMarkerAlt,FaPhone} from "react-icons/fa"
 
 const MyCard =({details}) => {
     return(
-        <Card>
+        <Card fluid>
             <CardBody className="text-center text-primary">
                 <img height="150" width="150" 
                 className="rounded-circle img-thumbnail border-danger" 

@@ -25,17 +25,20 @@ function App() {
     <div>
     <h1>Random Friend Generator</h1>
     
-    <Container fluid className="p-4  App">
+    <Container fluid className="p-2  App">
     
     <Row>
-      <Col md={4} classNmae="offset-md-4 mt-4">
+      <Col md={4} className="offset-md-4 ">
         <MyCard details={details}/>
       </Col>
-      <Col>
-      <Button outline color="warning" onClick={fetchDetails}>Next Profile</Button>
+     
+    </Row>
+    <Row>
+      <Col md={4} className="offset-md-5 ">
+    <Button className ="mt-3 mr-2"outline color="warning" onClick={fetchDetails}>Random friend</Button>
+     
       </Col>
     </Row>
- 
     </Container>
     
     </div>
