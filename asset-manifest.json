@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Random-Freind-Genrator/static/css/main.dbd9ebcf.css",
+    "main.js": "/Random-Freind-Genrator/static/js/main.a1f2fbeb.js",
+    "static/js/787.d2c7f2d6.chunk.js": "/Random-Freind-Genrator/static/js/787.d2c7f2d6.chunk.js",
+    "index.html": "/Random-Freind-Genrator/index.html",
+    "main.dbd9ebcf.css.map": "/Random-Freind-Genrator/static/css/main.dbd9ebcf.css.map",
+    "main.a1f2fbeb.js.map": "/Random-Freind-Genrator/static/js/main.a1f2fbeb.js.map",
+    "787.d2c7f2d6.chunk.js.map": "/Random-Freind-Genrator/static/js/787.d2c7f2d6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbd9ebcf.css",
+    "static/js/main.a1f2fbeb.js"
+  ]
+}
